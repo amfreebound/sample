@@ -1,0 +1,1 @@
+<source data-srcset="https://cc-prod.scene7.com/is/image/CCProdAuthor/dt_xd_repeatgrid1920?$pjpeg$&amp;jpegSize=100&amp;wid=599" srcset="https://cc-prod.scene7.com/is/image/CCProdAuthor/dt_xd_repeatgrid1920?$pjpeg$&amp;jpegSize=100&amp;wid=599" media="(max-width: 599px)">

@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="generator" CONTENT="NoteTab Light">
+<TITLE>*** Your Title Here ***</TITLE>
+</HEAD>
+<BODY>
+
+<H1><A NAME="Top">Readme</A></H1>
+
+<H2>Contents</H2>
+<ol>
+  <LI><a href="#A01">Introduction</a></LI>
+  <LI><a href="#A02">Hyperlinks</a></LI>
+  <LI><a href="#A03">Outline Documents</a></LI>
+  <LI><a href="#A04">Document Templates</a></LI>
+  <LI><a href="#A05">Clipbook Wizards</a></LI>
+  <LI><a href="#A06">Quick List</a></LI>
+  <LI><a href="#A07">Web Documents</a></LI>
+  <LI><a href="#A08">Mathematics</a></LI>
+  <LI><a href="#A09">Clipbook &amp; Maths</a></LI>
+  <LI><a href="#A10">Maths Examples</a></LI>
+</ol>
+<P>
+<HR>
+
+<H2><a name="A01">1. Introduction</a></H2>
+<p>This document demonstrates some of the capabilities of the Outline feature and other important functions available in NoteTab.</p>
+
+<p>Outline documents make it easy to organize your information in a structured format without using a database application or splitting your text into multiple files. The window on the left side of this text shows all the available headings (or topics). When you select a heading, its content is displayed in the main editor window.</p>
+
+<p>You can have up to about 5400 headings per Outline document and a heading can contain many megabytes of information. An Outline file can theoretically have a maximum capacity of 2GB.</p>
+
+<p>You can use hyperlinks to easily jump to any piece of information. See the <a href="#A02">hyperlinks</a> topic for more information on the subject. To jump to a topic, hold the Ctrl key down while you double-click on the hyperlink. If you set the “Quick Open Links” option under the Tools menu, you do not have to hold down the Ctrl key when you activate a hyperlink.</p>
+
+<p>See the <a href="#A03">Outline Documents</a> topic to find out how you can create your own. Other new features of interest include <a href="#A04">Document Templates</a> – ideal for saving time in creating many common types of documents (web pages, letters, etc.). Clipbook fans should take a look at the topic about <a href="#A05">Clipbook Wizards</a>. See how the new <a href="#A06">Quick List</a> can help you develop your web pages. And make sure you check the <a href="#A08">Mathematics</a> topic to find out how NoteTab can replace your calculator for many tasks.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A02">2. Hyperlinks</a></H2>
+<p>To create a hyperlink, simply place square brackets “[]” around the appropriate text. You can jump to a hyperlink topic by holding down the Ctrl key while you double-click on the text between the brackets. Or, if you prefer, place the cursor anywhere between the brackets and press Ctrl+H to go to the matching topic. Note that if you set the “Quick Open Links” option under the Tools menu, you do not have to hold down the Ctrl key when you activate a hyperlink with the mouse.</p>
+
+<p>Hyperlinks can be inserted in any kind of document. They can represent a heading in the active Outline document, or another Outline document, or the name of a file, or an Internet link, or a program to launch, or a line number, or a text search criteria. Case is not important unless you use the search criteria feature with case sensitivity enabled.</p>
+
+<p>Examples:<BR>
+* If you activate the <a href="#A01">introduction</a> hyperlink, the content of that Outline topic will be displayed.</p>
+
+<p>*  If you have another Outline file called “Important.OTL”, you can create a hyperlink that will display it and select the topic you specify. For example, [important.otl::meetings] will display the “meetings” heading. Note the use of the double colon to separate the main link criteria from the secondary criteria.</p>
+
+<p>* The accompanying “WhatsNew.txt” file can be opened with this hyperlink: <a href="WhatsNew.txt">WhatsNew.txt</a>. Note that a hyperlink is automatically created when you drag a file name from the <a href="#A06">Quick List</a> (Favorites or Disk Files).</p>
+
+<p>* The following command [explorer.exe] will launch Windows Explorer. You can also specify parameters as long as you place the program’s file name between double quotes ["explorer.exe" /e,/root,C:\].</p>
+
+<p>* You can open files in their associated application by using an exclamation character (!) at the start of the hyperlink text. The following example will open the GIF file in your associated image viewer:<BR>
+<IMG SRC="Samples/notetab.gif" WIDTH="622" HEIGHT="72" ALT="notetab"><BR>
+The next example will open the HTML file in your browser: <A HREF="Samples/notetab.htm">notetab</A>. When you convert an Outline document to a Web page with one of the “Modify/Document to HTML” menu commands, NoteTab will automatically convert image and HTML file hyperlinks to the appropriate HTML link tags.</p>
+
+<p>* The following hyperlink <a href="readme.txt">readme.txt</a> will display the “readme.txt” file. As it is not an Outline file, NoteTab assumes the second criteria “Glossary.otl” is text to search and will select the first occurrence of the word “Glossary.otl”. Note that you will have to specify the full path name if the file is not in the same directory as the document containing the hyperlink.</p>
+
+<p>* If you want to apply the search criteria type of hyperlink on the active document, just omit the file name. For example, [::NoteTab] will find the next occurrence of the name NoteTab. Since the double colon does not necessarily look very nice in this case, the following format with a blank space on each side of the search criteria is also valid: [ NoteTab ].</p>
+
+<p>* By default, the search feature is case sensitive, only matches single words, and searches forwards. However, you can change this behavior by using extra parameters: “I” indicates that the search should not be case sensitive, “T” indicates that any text is acceptable, and “B” tells NoteTab to search backwards. Use the “^” character to separate the search criteria from its parameters. For example, [ tab^ITB] will select the “Tab” part of the name NoteTab preceding the hyperlink. And <a href="readme.txt">readme.txt</a> will find the last occurrence of the word “NoteTab” in the Readme.txt file.</p>
+
+<p>* To jump to a specific line number in a document, the format of the hyperlink is similar to the search criteria. You use the line number instead of the search text and use the parameter “L” so that NoteTab knows it is the line number you want and not text to search. For example, <a href="readme.txt">readme.txt</a> will display the Readme.txt file with the cursor at the beginning of the 5th line. If you specify “-1”, the cursor will be placed on the last line: <a href="readme.txt">readme.txt</a></p>
+
+<p>* URLs are also valid. However, if the link does not start with the typical “www.”, then you must fully qualify the URL (add "http://", or "ftp://", etc.). The following will connect to the NoteTab site through your default web browser <a href="www.notetab.com">www.notetab.com</a>. Hold the Alt key down if you want to open the link in a new web browser window (this feature may not work with all browsers).</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A03">3. Outline Documents</a></H2>
+<p>You can create your own outline documents by choosing the “New Outline” command from the File menu (trial or commercial version required). Unlike standard documents, you must choose a name before it is created. You will also be prompted to enter a name for the first heading. Once you have completed those steps, you are ready to enter content for your first heading.</p>
+
+<p>To create a new heading, just press Shift+Ctrl+A. You will then be prompted to enter the name for the new heading. Note that you do not need to save the content of modified headings as you move through the list – this is automatically taken care of by NoteTab. Shift+Ctrl+R will remove the current topic. If you can’t remember these shortcuts, just place the mouse cursor over the Headings window and look at the hint in the status bar. You will also find other shortcuts listed in the “Outline Heading” submenu under the Documents menu. You can also invoke the shortcut menu from the Headings window.</p>
+
+<p>You can add <a href="#A02">hyperlinks</a> to other headings. When activated, the content of the linked heading is displayed. Use the “Documents|Outline Heading|Copy Heading” menu command (or the keyboard shortcut Shift+Ctrl+B) to easily create a new heading based on selected text in your outline document. This command automatically inserts square brackets around the selection, adds the heading to the list, and opens it for input.</p>
+
+<p>The PageUp/PageDown keys also let you scroll from one heading to the next. If the cursor is at the beginning of the heading’s content, pressing PageUp will display the previous heading. Pressing PageDown when the cursor is at the end of the heading’s content will display the next heading. If the last heading is already selected, NoteTab will ask you if you want to add a new heading. You can easily reorder headings by dragging them with the mouse to a new position.</p>
+
+<p>Just like any other document, you can have multiple Outline documents open simultaneously. Outline files are very similar to Clipbook libraries and do not contain any control codes other than plain text characters (i.e. no binary characters). As a result, you can easily open them in any text editor or word processor (although you won’t benefit from the outline layout), or send them in e-mail messages.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A04">4. Document Templates</a></H2>
+<p>A template is a special kind of document that provides content for shaping a new document. You can use several templates to save time in creating many common types of documents.</p>
+
+<p>Templates are slightly different from normal documents in that their first line contains the template header definition. The header informs NoteTab that the file being opened is a template; it can also tell NoteTab what name it should generate for the new document. For example, the header of this document’s template looks like this:</p>
+
+<p>= DocTemplate "Notes%0.3d.txt"</p>
+
+<p>You can easily insert a template header in your active document by choosing the command “Add Header” under the File|Template menu.</p>
+
+<p>Headers must always start with an equal (=) sign as the first character on the line followed by the word “DocTemplate” (case is not important). After that first part, you can add the text format that NoteTab should use to generate the names of documents based on the template. This information is optional and must be enclosed in double quotes (") when used. The code “%d” indicates where the incremental numbering is inserted in the name. In the above example, the “0.3” between the % and d tells NoteTab to format numbers smaller than 3 digits with leading zeroes. If you omit the extension, the currently defined default extension will be added when the name is generated. You can also include a path name if you always want the documents saved in the specified directory.</p>
+
+<p>Add this type of header on the first line of any document and it will become a template once you save it. Then, whenever you open it through the File|Open or File|Template|Open menu command, a new document based on your template will be created. If you need to modify the content of a template, use the File|Template|Edit menu command.</p>
+
+<p>Starting with version 4.6, NoteTab template files accept Clip commands and functions embedded in the text. When such a file is opened, the text contained in it is interpreted and the resulting text is displayed in the document. To enable this feature, you will have to include the keyword “ClipCode” in the header line of the template file. See the template file HTML.tpl for an example of embedded functions. Example of header:</p>
+
+<p>= DocTemplate ClipCode "Home%0.3d.htm"</p>
+
+<p>Note that you cannot close a template document through its own embedded Clip code.</p>
+
+<p>Since version 4.8, template headers accept the ^$GetDate()$ function in order to use the current date in the file name. Example:<BR>
+= DocTemplate ClipCode "Notes-^$GetDate(yyyymmdd)$-%0.3d.txt"</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A05">5. Clipbook Wizards</a></H2>
+<p>In previous NoteTab versions, inserted Clipbook items with multiple prompts would display a dialog box for each prompt one after the other. Now, multiple prompts are all shown in a single dialog box called a Wizard. This new approach makes filling the fields quicker and more user friendly.</p>
+
+<p>Clipbook Wizards are fairly easy to create using the special Clipbook syntax (see the Help file for more details). Each field can either be a single or multi-line input box, a list box, or a combo box with a list of predefined values. Each field can have a descriptive label and contain predefined values.</p>
+
+<p>Many examples are provided in the sample Clipbook libraries included with NoteTab. Open the HTML library (click on the HTML button below) and double-click in the list on the item “HTML begin” to see an example of a relatively complex Wizard. You’ll find another type of example by double-clicking on the “Fahrenheit -&gt; Celsius” in the Utilities library (click on the Utilities button below).</p>
+
+<p>Another feature gives Clipbook-library authors the possibility to advertise their work. Double-click on the item “About this library” to see an example of this feature. The dialog box is web sensitive so a user can double-click on your web or E-mail address to reach you. Use the syntax element “^!INFO” to create the information dialog box and “^P” tokens to indicate a new line in your text.</p>
+
+<p>Because the Clipbook syntax can be hard to remember, a “Clip Assistant” is available under the Tools|Quick List menu. When you activate this command, a list of ready-to-use syntax elements is displayed in place of the <a href="#A06">Quick List</a>. You can paste the items into your document by double-clicking on them or by dragging them. You can edit the ClipHelp.CLH file if you want to customize the Clip Assistant list.</p>
+
+<p>Press F4 if you want to close the Clipbook at this stage.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A06">6. Quick List</a></H2>
+<p>You can open the Quick List by pressing F6. When you use this feature for the first time, it will display the list of documents currently open in NoteTab. You can move to another document by selecting it from that list.</p>
+
+<p>The Quick List window can be used to display four types of content:</p>
+
+<p>1. Opened documents (Documents)<BR>
+2. Favorites list (Favorites)<BR>
+3. Files in a directory (Disk Files)<BR>
+4. Clip Assistant</p>
+
+<p>The simplest way to change the type of list is by invoking the shortcut menu in the Quick List window. Choosing Disk Files will display all the TXT files in the current directory. You can change directory or file criteria by editing the content of the combo box and then pressing the ENTER key. You can specify multiple criteria in the combo box; the different criteria must be separated with a semi colon (;). Example: c:\images\*.gif;*.jpg;*.jpeg.</p>
+
+<p>Double-clicking in the combo box will open a dialog box that makes it easy to change directories. To open one of the files listed, just double-click on its name.</p>
+
+<p>The Favorites list contains the same items as the Favorites menu. When you use NoteTab for the first time, the Favorites list will be empty. Once you have added documents to the list, just double-click on a document name to open it.</p>
+
+<p>When the Favorites or Disk Files are displayed, you can drag-and-drop the names into your document. If the document has an HTML extension (as listed in the Options dialog box), dragged file names are converted to HTML links: image files (GIF, JPG, JPEG, and BMP) will be inserted as Img tags and other files as a HRef tags. The Img tags will even have the image size attributes completed. You can change the format of the default tag by editing the appropriate fields in the Options dialog box. See the topic <a href="#A07">Web Documents</a> for more information on creating web pages.</p>
+
+<p>The Clip Assistant contains all the commands and functions available in the Clip syntax. You select and complete commands and functions through the Clip Wizards (which are themselves created through Clip syntax).</p>
+
+<p>Press F6 if you want to close the Quick List at this stage.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A07">7. Web Documents</a></H2>
+<p>NoteTab has many features that make it easy to create or convert documents to web pages. Note, however, that only NoteTab Pro offers HTML-syntax highlighting. Support tools include the Editor Clipbook, the <a href="#A06">Quick List</a>, and the Modify menu which offers powerful commands to convert characters, selected text, or entire documents to HTML.</p>
+
+<p>For example, this Outline document can be converted to a web page complete with a table of contents, headers for each topic, and links between them. To see for yourself, use the menu command “Modify|Document to HTML|With Paragraph Tags”. Once the new HTML document is created, hit the F8 shortcut key to view it in your favorite browser (if you’re under Windows limited account, first save the changes to your My Documents folder before hitting the F8 key). Settings in the Options dialog box let you customize the HTML header and footer. Creating this type of web page has never been easier. Webmasters maintaining FAQ lists will love this feature!</p>
+
+<p>The Editor Clipbook is a powerful tool for adding HTML tags to your text. Most HTML editors let you add tags through toolbars loaded with buttons or cascading menus. This approach is awkward to say the least. With the Clipbook, tags are clearly identified by meaningful names, the list is always in view once you open it, and it can contain a virtually unlimited number of items (tags or frequently used text). You can easily customize the Clipbook HTML libraries to suit your needs. A little icon next to each item indicates whether it contains a tag that can wrap around selected text (a + symbol) or not (a circle). Some Clipbook items even accept user input before they are pasted in the document (see the topic <a href="#A05">Clipbook Wizards</a> for more information). You can insert Clipbook items by double-clicking on them, by dragging them into the document, by typing the first matching characters and hitting the F2 function key, or by invoking the In-Context Clipbook using the ESC key. Use Ctrl+Spacebar as a shortcut to insert the active Clipbook item. See the Help file for more information on this tool.</p>
+
+<p>Adding links to other web pages or images stored on your computer is really easy when you use the <a href="#A06">Quick List</a>. When it is configured to display disk files or Favorites, files can be dragged from the list into the document. If the extension of the document is listed in the “HTML File Extensions” listbox (Options dialog box), the appropriate link tag is inserted at the point where you drop the file.</p>
+
+<p>Changing a URL or any other type of text (even multiple lines) across many web pages is also easy with NoteTab. Two methods are available: either you open all the files that are likely to contain the searched text and then use the Replace command (Ctrl+R) to scan through them, or use the “Search Disk” command (Ctrl+D) to scan your disk files.</p>
+
+<p>Use <a href="#A04">Document Templates</a> to create new documents that already contain the framework of your web page layout. This feature will save you a lot of typing when you create a new web page. A sample HTML template is provided with NoteTab.</p>
+
+<p>You can view your HTML document in your default web browser by using the F8 function key. There is no need to save your changes when you use this feature. If NoteTab detects that your document has been modified, it stores the changes in a temporary file and sends it to the browser. Hold the Alt key down if you want to open the document in a new web browser window (this feature may not work with all browsers).</p>
+
+<p>You can organize your HTML documents in multiple categories by using the flexible Favorites dialog box (Shift+F2). The Favorites feature can exploit an unlimited number of categories. Items in the list can represent file names (including wildcards), directories, and the names of other categories. See the Help file for more information on this feature.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A08">8. Mathematics</a></H2>
+<p>NoteTab can also calculate mathematical expressions in a document. Expressions can have up to 100 embedded parentheses. Note that you may need to break down very long expressions into groups of parentheses if you get an error message.</p>
+
+<p>For example, if you enter the following expressions in a document: Sin(3)*5/Pi=</p>
+
+<p>Place the cursor at the end of it and then press Ctrl+E (or from the menu Tools|Calculate Expression). The result is instantly inserted after the equal sign. Note that the cursor must be placed at the end of the expression for this to work (or the expression must be selected).</p>
+
+<p>If the equal sign is missing, NoteTab replaces the expression with its result. If your document is flagged as Read-Only then NoteTab copies the result to the Clipboard and displays it in a dialog box.</p>
+
+<p>NoteTab supports chained expressions like 1+2=3 +3=6 +4=10. And you can also add numbers arranged in a column; just select all the numbers in the following four lines and press Ctrl+E:</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-5<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40</p>
+
+<p>Note that this feature works with up to 100 hundred numbers. Beyond that limit, you'll get an error message from NoteTab.</p>
+
+<p>Integer values cannot exceed this range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. You will get incorrect results if you attempt to use numbers or calculate figures that are larger or smaller than that.</p>
+
+<p>The “Calculate Expression” command and the ^$Calc Clip function analyse the expression to determine the decimal and digit grouping symbols before calculating the result. If the symbols cannot be determined from the expression, NoteTab uses those defined in your Windows region settings. Note that in the USA and several other regions, the decimal symbol is a dot (e.g. 53.2) and the digit grouping symbol a comma (e.g. 10,000). However, it is the exact opposite with the default Windows settings in Germany (e.g. 10.053,2).</p>
+
+<p>See the topic <a href="#A09">Clipbook &amp; Maths</a> for more interesting uses of the mathematics feature and the <a href="#A10">Maths Examples</a> topic for some helpful examples.</p>
+
+<p>
+Supported mathematical operators and functions are listed below.</p>
+
+<p>Predefined value:<BR>
+PI</p>
+
+<p>Accepted operators: + , - , * , / , ^ , MOD, DIV</p>
+
+<p>The following functions are supported; it doesn’t matter if you use lower or upper case:</p>
+
+<p>COS, SIN, SINH, COSH, TAN, COTAN, ARCTAN, EXP, LN, LOG10, LOG2, LOGN, SQRT, SQR, POWER, INTPOWER, MIN, MAX, ABS, TRUNC, ROUND, INT, CEIL, FLOOR,<BR>
+HEAV (heav(x) is =1 for x&gt;=0 and =0 for x&lt;0),<BR>
+SIGN (sign(x) is 1 for x&gt;0, 0 for x=0, -1 for x&lt;0),<BR>
+ZERO (zero(x) is 0 for x=0, 1 for x&lt;&gt;0),<BR>
+LZERO (lzero(x) is 0 for x&lt;&gt;0, 1 for x=0),<BR>
+RND (rnd(x) = int(x) * Random)<BR>
+RANDOM (random(X) = Random; the argument X is not used)</p>
+
+<p>Functions like MIN and MAX take two values; you must use a semi-colon “;” to separate them. For example: MAX(2;3)</p>
+
+<p>Trigonometric functions take values in radian units.</p>
+
+<p>
+Acknowledgments:<BR>
+================<BR>
+The mathematics feature was made possible thanks to the superb freeware parsing function developed by the following people:<BR>
+Renate Schaaf (schaaf@math.usu.edu), Alin Flaider (aflaidar@datalog.ro), and Stefan Hoffmeister (Stefan.Hoffmeister@Uni-Passau.de)</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A09">9. Clipbook &amp; Maths</a></H2>
+<p>The Clipbook also supports mathematical expressions. The advantage of the Clipbook is that you can create <a href="#A05">Clipbook Wizards</a> to insert the values of variables. You can create Clipbook items that will either paste the result in your document or display it in an information window.</p>
+
+<p>The new syntax element is as follows:<BR>
+&nbsp;&nbsp;^$Calc(Expression)$<BR>
+or<BR>
+&nbsp;&nbsp;^$Calc(Expression;Decimals)$<BR>
+or<BR>
+&nbsp;&nbsp;^$Calc(Expression;Decimal and digit grouping symbol)$<BR>
+or<BR>
+&nbsp;&nbsp;^$Calc(Expression;Decimals;Decimal and digit grouping symbol)$</p>
+
+<p>“Expression” can be any mathematical expression using the operators and functions listed further down. You can optionally define how many decimal values should be displayed in the result by placing a figure after the expression with a semicolon (;) between the two parts. If you leave out the Decimals parameter, NoteTab will try to automatically determine how many significant numbers should be shown in the answer.</p>
+
+<p>For example: ^$Calc(7/11;3)$ will display the result 0.636 assuming the default regional decimal symbol is a dot.</p>
+
+<p>Starting with version 7.01, you can specify a third parameter to define the decimal and digit grouping symbols used in the expression. The first character defines the decimal symbol and the second defines the digit grouping symbol. If only the decimal symbol is specified, then no digit grouping symbol will be used in the result. Use letter "E" instead of a digit grouping symbol to always use a scientific notation in results. A blank character tells NoteTab to use the regional symbol defined in Windows. Invalid symbols are simply ignored. Examples:</p>
+
+<p>^$Calc(123.456*100;2)$ -&gt; 12,345.60 (US regional settings) or 12,345,600.00 (German regional settings)<BR>
+^$Calc(123.456*100;2;".,")$ -&gt; 12,345.60<BR>
+^$Calc(123,456*100;2;",.")$ -&gt; 12.345,60<BR>
+^$Calc(123,456*100;2;".,")$ -&gt; 12,345,600.00<BR>
+^$Calc(123.456*100;2;".")$ -&gt; 12345.60<BR>
+^$Calc(123.456*100;2;".E")$ -&gt; 1.235E+04<BR>
+^$Calc(1.234-1;",.")$ -&gt; 1233<BR>
+^$Calc(1,234-1;",.")$ -&gt; 0,234</p>
+
+<p>With US regional settings, the following resolve like this:<BR>
+^$Calc(1.234-1)$ -&gt; 0.234<BR>
+^$Calc(1,234-1)$ -&gt; 1,233</p>
+
+<p>With German regional settings, the following resolve like this:<BR>
+^$Calc(1.234-1)$ -&gt; 1.233<BR>
+^$Calc(1,234-1)$ -&gt; 0,234</p>
+
+<p>^$Calc(1.234-1;.,)$ -&gt; 0.234<BR>
+^$Calc(1,234-1;.,)$ -&gt; 1,233</p>
+
+<p>
+You can also add prompts to supply values to variables. The following example will prompt the user to define a value for x and the number of decimals that the answer should display:</p>
+
+<p>&nbsp;&nbsp;^$Calc(Sin(^?[Sin(x): Enter a value for x]);^?[Decimals])$</p>
+
+<p>Look at the Utilities libraries for more examples.</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+
+<H2><a name="A10">10. Maths Examples</a></H2>
+<p>Written by Larry Thomas and modified by Fookes Software for NoteTab 7.1</p>
+
+<p>Basic expressions:<BR>
+14 + 9 = 23<BR>
+23 - 9 = 14<BR>
+7.31 * 16.75 = 122.44<BR>
+155.29 / 29.49 = 5.27<BR>
+2 ^ 2 = 4 (Squared)<BR>
+2 ^ (1/2) = 1.41421356 (Square Root)<BR>
+2 ^ 3 = 8 (Cubed)<BR>
+2 ^ (1/3) = 1.25992105 (Cube Root)<BR>
+91 DIV 17 = 5 (Quotient)<BR>
+91 MOD 17 = 6 (Remainder)<BR>
+17 * 5 = 85<BR>
+85 + 6 = 91</p>
+
+<p>Using digit grouping symbols:<BR>
+3000 + 6000 = 9000<BR>
+3,000 + 6,000 = 9,000<BR>
+3000 + 7000 = 10,000<BR>
+3,000.00 + 6,000.00 = 9000<BR>
+3,000.01 + 6,000.00 = 9,000.01<BR>
+300000 + 600000 = 900000</p>
+
+<p>Using regional number formatting symbols:<BR>
+23,456.78 / 2 = 11,728.39<BR>
+23.456,78 / 2 = 11.728,39<BR>
+23'456.78 / 2 = 11'728.39<BR>
+23'456,78 / 2 = 11'728,39<BR>
+0,999 + 1 = 1,999</p>
+
+<p>Using scientific notation:<BR>
+3e2 + 5e2 = 800<BR>
+350e6 * 3 = 1.050E+09<BR>
+6.646E+0035 / 2= 3.323E+35</p>
+
+<p>Constants:<BR>
+PI = 3.14159265</p>
+
+<p>Functions:<BR>
+COS(1) = 0.54030231<BR>
+SIN(1) = 0.84147098<BR>
+SINH(1) = 1.1752012<BR>
+COSH(1) = 1.54308063<BR>
+TAN(1) = 1.55740772<BR>
+ARCTAN(1.557407724654902) = 1<BR>
+COTAN(1) = 0.64209262<BR>
+EXP(1) = 2.71828183<BR>
+LN(2.718281828459045) = 1<BR>
+LOG10(100) = 2<BR>
+LOG2(8) = 3<BR>
+LOGN(3;27) = 3<BR>
+SQRT(25) = 5<BR>
+SQR(5) = 25<BR>
+POWER(2;3) = 8<BR>
+POWER(2;3.55) = 11.71<BR>
+INTPOWER(2;3.55) = 8 (only uses the integer 3)<BR>
+MIN(53;92) = 53<BR>
+MAX(53;92) = 92<BR>
+MAX(7.512;INT(7.512)) = 7.512<BR>
+MIN(7.512;INT(7.512)) = 7<BR>
+MAX(-7.512;INT(-7.512)) = -7<BR>
+MIN(-7.512;INT(-7.512)) = -7.512<BR>
+MAX(3;-4) = 3<BR>
+MIN(3;-4) = -4<BR>
+ABS(14) = 14<BR>
+ABS(-14) = 14<BR>
+ABS(0) = 0<BR>
+TRUNC(1.59) = 1<BR>
+TRUNC(7.12) = 7<BR>
+INT(1.59) = 1<BR>
+INT(-7.12) = -7</p>
+
+<p>ROUND(1.5955*100)/100 = 1.6000<BR>
+ROUND(1.59112*100)/100 = 1.59000<BR>
+ROUND(5285/100)*100 = 5300<BR>
+ROUND(5249/100)*100 = 5200</p>
+
+<p>CEIL rounds the number up from zero to the next integer if it has a fractional part and it is a positive number. If it is a negative number, it rounds the number up towards zero to the next integer. It does not round it if the number does not have a decimal part.</p>
+
+<p>CEIL(7.9112) = 8<BR>
+CEIL(-7.9112) = -7<BR>
+CEIL(7.0000001) = 8<BR>
+CEIL(-7.0000001) = -7<BR>
+CEIL(7) = 7<BR>
+CEIL(-7) = -7</p>
+
+<p>FLOOR rounds the number down toward zero to the next integer if it has a fractional part and it is a positive number. If it is a negative number it rounds the number down from zero to the next integer. It makes no change if it does not have a decimal part.</p>
+
+<p>FLOOR(7.9112) = 7<BR>
+FLOOR(-7.9112) = -8<BR>
+FLOOR(7.0000001) = 7<BR>
+FLOOR(-7.0000001) = -8<BR>
+FLOOR(7) = 7<BR>
+FLOOR(-7) = -7</p>
+
+<p>You can use HEAV(X) to test for negative numbers.<BR>
+It returns 0 (False) for a negative number and 1 (True) for all others.</p>
+
+<p>HEAV(0) = 1<BR>
+HEAV(7) = 1<BR>
+HEAV(.0000001) = 1<BR>
+HEAV(-.00059) = 0</p>
+
+<p>You can use SIGN(X) in a clip to control the sign of another number.</p>
+
+<p>^!Set %Test%=^$Calc(SIGN(^%x%)*^%y%;0)$<BR>
+If x is greater than zero Test will be equal to y.<BR>
+If x is zero then Test will be zero.<BR>
+If x is less than zero then Test will be equal to y with its sign reversed +/-.</p>
+
+<p>^!Set %Test%=^$Calc(SIGN(^%x%)*ABS(^%y%);0)$<BR>
+If x is greater than zero Test will be equal to y.<BR>
+If x is zero then Test will be zero.<BR>
+If x is less than zero Test will be equal to minus y.</p>
+
+<p>SIGN(8) = 1<BR>
+SIGN(0) = 0<BR>
+SIGN(-3) = -1</p>
+
+<p>You can use ZERO(X) to test for a non-zero number.<BR>
+Returns 0 (False) if the number is a zero and 1 (True) if it is not a zero.</p>
+
+<p>ZERO(0) = 0<BR>
+ZERO(-9) = 1<BR>
+ZERO(.0000000000000001) = 1</p>
+
+<p>You can use LZERO(X) to test for a zero.<BR>
+Returns 1 (True) if the number is a zero and 0 (False) if it is not.</p>
+
+<p>LZERO(0) = 1<BR>
+LZERO(-9) = 0<BR>
+LZERO(.0000000000000001) = 0</p>
+
+<p>These are random number generators for games and such.</p>
+
+<p>RND(100)-50 = 22.42624315 (Random number from -50 to +50)<BR>
+RANDOM(1)+7 = 7.02228496 (Random number from 7 to 8)</p>
+<P>
+<B>[ <A HREF="#Top">Top of Page</A> ]</B>
+
+</BODY>
+</HTML>
